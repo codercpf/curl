@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+
+	<form action="http://www.webxml.com.cn/WebServices/WeatherWS.asmx/getWeather" method="POST" role="form">
+		<legend>theCityCode</legend>
+	
+		<div class="form-group">
+			<label for="theCityCode">城市编码：</label>
+			<input type="text" class="form-control" id="theCityCode" name="theCityCode">
+		</div>
+		<div class="form-group">
+			<label for="theUserID">用户ID：</label>
+			<input type="text" class="form-control" id="theUserID" name="theUserID">
+		</div>		
+	
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+	<br/><br/><br/>
+
+	<form action="http://www.webxml.com.cn/WebServices/WeatherWebService.asmx/getWeatherbyCityName" method="POST" role="form">
+		<legend>theCityName</legend>
+	
+		<div class="form-group">
+			<label for="theCityName">城市名称：</label>
+			<input type="text" class="form-control" id="theCityName" name="theCityName">
+		</div>		
+	
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+	</div>
+	
+</body>
+</html>
